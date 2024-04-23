@@ -1,5 +1,8 @@
 name: Solar System Workflow
-
+env: 
+  MONGO_URI: ${{secrets.MONGO_URI}}
+  MONGO_USERNAME: superuser
+  MONGO_PASSWORD: ${{secrets.MONGO_PASSWORD}}
 on: 
   workflow_dispatch:
   push:
